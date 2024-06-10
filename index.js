@@ -4,3 +4,12 @@ let newArray = csv.split("\n");
 console.log(csv);
 
 let dataArray = [];
+
+for (let i = 0; i < newArray.length; i++) {
+  let splitItem = newArray[i].split(",");
+  dataArray.push(splitItem);
+}
+
+console.log(dataArray);
+
+let cellHeaders = [];
